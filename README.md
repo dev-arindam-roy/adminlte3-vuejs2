@@ -1,24 +1,4 @@
-# adminlte3-vue
+# Admin LTE3 with VUE JS 2
 
-## Project setup
-```
-npm install
-```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![2023-07-15_214118](https://github.com/dev-arindam-roy/adminlte3-vuejs2/assets/24665327/6fd2e905-317e-4e25-9c28-27ceb7e1eaa1)
