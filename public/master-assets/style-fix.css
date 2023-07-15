@@ -1,0 +1,15 @@
+.temp-content {
+    padding: 0 0.5rem !important;
+}
+.os-theme-light>.os-scrollbar:hover>.os-scrollbar-track>.os-scrollbar-handle {
+    background: rgba(0,0,0,.4) !important;
+}
+.os-theme-light>.os-scrollbar>.os-scrollbar-track>.os-scrollbar-handle {
+    background: rgba(0,0,0,.4);
+}
+.vld-overlay.is-full-page {
+    z-index: 99999 !important;
+}
+.elevation-4 {
+    box-shadow: none !important;
+}

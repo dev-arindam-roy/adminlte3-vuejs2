@@ -1,28 +1,69 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" ref="appRoot" v-cloak>
+    <loading 
+      :active.sync="isDisplayLoading" 
+      :color="'#007bff'"
+      :is-full-page="true"
+      :loader="'spinner'"
+      :background-color="'#fbfbfb'"></loading>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Loading from 'vue-loading-overlay';
+import 'vue-loading-overlay/dist/vue-loading.css';
 export default {
-  name: 'App',
+  name: "AppView.vue",
+  props: {
+    isPageLoading: {
+      type: Boolean,
+      default: true,
+      required: true
+    }
+  },
+  data() {
+    return {
+      
+    }
+  },
   components: {
-    HelloWorld
+    Loading
+  },
+  watch: {
+
+  },
+  computed: {
+    isDisplayLoading() {
+      return this.isPageLoading
+    }
+  },
+  methods: {
+    
+  },
+  beforeCreate()  {
+  
+  },
+  created() {
+    
+  },
+  beforeMount() {
+  
+  },
+  mounted() {
+    
+  },
+  beforeUpdate() {
+  
+  },
+  updated() {
+  
+  },
+  beforeDestroy() {
+  
+  },
+  destroyed() {
+  
   }
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
